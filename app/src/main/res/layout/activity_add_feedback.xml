@@ -4,27 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8DC87"
+    android:background="#86D1F3"
     tools:context=".AddData">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/shape"
+            android:layout_width="104dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.465"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="88dp"
+            android:layout_marginTop="168dp"
             android:text="ADD FEEDBACK"
             android:textColor="@color/black"
             android:textSize="30sp"
@@ -100,11 +103,23 @@
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
-            android:backgroundTint="@color/teal_200"
+            android:backgroundTint="#2196F3"
             android:text="ADD"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Feedback" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="104dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerBtn" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
