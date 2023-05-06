@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarrerQuestApplication"
         tools:targetApi="31">
+
         <activity
             android:name=".SignIn"
             android:exported="true">
@@ -76,7 +77,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".SignUp"
             android:exported="true">
@@ -88,6 +88,15 @@
         </activity>
         <activity
             android:name=".AddData"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddFeedback"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
