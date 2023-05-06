@@ -4,24 +4,25 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.carrerquestapplication.databinding.ActivityDeleteDataBinding
+import com.example.carrerquestapplication.databinding.ActivityDeleteFeedbackBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class DeleteData : AppCompatActivity() {
+class DeleteFeedback : AppCompatActivity() {
 
-    private lateinit var binding: ActivityDeleteDataBinding
+    private lateinit var binding: ActivityDeleteFeedbackBinding
     private lateinit var database : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDeleteDataBinding.inflate(layoutInflater)
+        binding = ActivityDeleteFeedbackBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.deletedataBtn.setOnClickListener {
 
-            val userName = binding.etusername.text.toString()
-            if(userName.isNotEmpty())
-                deleteData(userName)
+            val feedbackId = binding.etusername.text.toString()
+            if(feedbackId.isNotEmpty())
+                deleteData(feedbackId)
             else
                 Toast.makeText(this,"Please Enter the username", Toast.LENGTH_SHORT).show()
 
@@ -30,8 +31,9 @@ class DeleteData : AppCompatActivity() {
 
     private fun deleteData(userName: String) {
 
-        database = FirebaseDatabase.getInstance().getReference("User")
-        database.child(userName).removeValue().addOnSuccessListener {
+        database = FirebaseDatabase.getInstance().getReference("Feedback")
+        val feedbackId = binding.etusername.text.toString()
+        database.child(feedbackId).removeValue().addOnSuccessListener {
 
             binding.etusername.text.clear()
             Toast.makeText(this,"Successfully Deleted", Toast.LENGTH_SHORT).show()
