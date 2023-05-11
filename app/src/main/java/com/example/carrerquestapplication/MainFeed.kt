@@ -4,17 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.*
 
-class Profile : AppCompatActivity() {
-
-
+class MainFeed : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile)
+        setContentView(R.layout.activity_main_feed)
 
         val AddNoteBtn : Button = findViewById(R.id.AddNoteBtn)
         val ReadNoteBtn : Button = findViewById(R.id.ReadNoteBtn)
@@ -22,29 +16,23 @@ class Profile : AppCompatActivity() {
         val DeleteNoteBtn : Button = findViewById(R.id.DeleteNoteBtn)
 
         AddNoteBtn.setOnClickListener{
-            val intent = Intent(this,Note::class.java)
+            val intent = Intent(this,AddFeedback::class.java)
             startActivity(intent)
         }
 
         ReadNoteBtn.setOnClickListener{
-            val intent = Intent(this,ReadData::class.java)
+            val intent = Intent(this,ReadFeedback::class.java)
             startActivity(intent)
         }
 
         UpdateNoteBtn.setOnClickListener{
-            val intent = Intent(this,MainFeed::class.java)
+            val intent = Intent(this,UpdateFeedBack::class.java)
             startActivity(intent)
         }
 
         DeleteNoteBtn.setOnClickListener{
-            val intent = Intent(this,AddApplication::class.java)
+            val intent = Intent(this,DeleteFeedback::class.java)
             startActivity(intent)
         }
-
-
     }
-
-
-
-
 }

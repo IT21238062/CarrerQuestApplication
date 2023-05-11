@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFeed">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="214dp"
+        android:layout_height="102dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/home1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="370dp"
+        android:layout_height="81dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="221dp"
+        android:text="Lets write Your FEEDBACK!"
+        android:textColor="#03A9F4"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/AddNoteBtn"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="461dp"
+        android:layout_marginEnd="81dp"
+        android:layout_toStartOf="@+id/UpdateNoteBtn"
+        android:backgroundTint="#2196F3"
+        android:text="FEEDBACK" />
+
+    <Button
+        android:id="@+id/UpdateNoteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="459dp"
+        android:layout_marginEnd="26dp"
+        android:backgroundTint="#2196F3"
+        android:text="UPDATE_FEED" />
+
+    <Button
+        android:id="@+id/ReadNoteBtn"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddNoteBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="115dp"
+        android:backgroundTint="#2196F3"
+        android:text="READ_FEED" />
+
+    <Button
+        android:id="@+id/DeleteNoteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UpdateNoteBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="115dp"
+        android:backgroundTint="#2196F3"
+        android:text="DELETE_FEED" />
+
+</RelativeLayout>
