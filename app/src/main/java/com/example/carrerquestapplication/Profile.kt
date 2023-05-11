@@ -37,7 +37,7 @@ class Profile : AppCompatActivity() {
         }
 
         DeleteNoteBtn.setOnClickListener{
-            val intent = Intent(this,DeleteData::class.java)
+            val intent = Intent(this,AddApplication::class.java)
             startActivity(intent)
         }
 
