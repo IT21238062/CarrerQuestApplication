@@ -90,7 +90,7 @@ class SignIn : AppCompatActivity() {
             }else{
                 auth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if(it.isSuccessful){
-                        val intent = Intent(this,Note::class.java)
+                        val intent = Intent(this,Profile::class.java)
                         startActivity(intent)
                     }else{
                         Toast.makeText(this,"Something went wrong, try again",Toast.LENGTH_SHORT).show()

@@ -87,12 +87,26 @@
             android:layout_width="360dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="612dp"
+            android:layout_marginTop="584dp"
             android:backgroundTint="@color/teal_200"
             android:text="Update Note"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/CancelBtn"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF1706"
+            android:text="CANCEL"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateBtn" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

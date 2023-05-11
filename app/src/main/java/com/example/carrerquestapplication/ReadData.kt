@@ -1,7 +1,9 @@
 package com.example.carrerquestapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import com.example.carrerquestapplication.databinding.ActivityReadDataBinding
 import com.google.firebase.database.DatabaseReference
@@ -17,6 +19,13 @@ class ReadData : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityReadDataBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val CancelBtn : Button = findViewById(R.id.CancelBtn)
+
+        CancelBtn.setOnClickListener{
+            val intent = Intent(this,Note::class.java)
+            startActivity(intent)
+        }
 
         binding.readdataBtn.setOnClickListener {
 

@@ -1,7 +1,9 @@
 package com.example.carrerquestapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import com.google.firebase.auth.FirebaseAuth
 import android.widget.Toast
 import com.example.carrerquestapplication.databinding.ActivityAdddataBinding
@@ -19,6 +21,13 @@ class AddData : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAdddataBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val CancelBtn : Button = findViewById(R.id.CancelBtn)
+
+        CancelBtn.setOnClickListener{
+            val intent = Intent(this,Note::class.java)
+            startActivity(intent)
+        }
 
         auth = FirebaseAuth.getInstance()
 
