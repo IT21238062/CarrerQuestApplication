@@ -27,7 +27,7 @@ class Profile : AppCompatActivity() {
         }
 
         ReadNoteBtn.setOnClickListener{
-            val intent = Intent(this,ReadData::class.java)
+            val intent = Intent(this,AddJob::class.java)
             startActivity(intent)
         }
 
