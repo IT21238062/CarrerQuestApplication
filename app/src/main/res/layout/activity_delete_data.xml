@@ -64,7 +64,7 @@
             android:layout_height="60dp"
             android:layout_marginTop="12dp"
             android:backgroundTint="#FF1706"
-            android:text="CANCEL"
+            android:text="BACK TO HOME"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

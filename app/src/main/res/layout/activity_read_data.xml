@@ -161,7 +161,7 @@
                 android:layout_width="360dp"
                 android:layout_height="60dp"
                 android:backgroundTint="#FF1706"
-                android:text="CANCEL"
+                android:text="BACK TO HOME"
                 android:textAllCaps="false" />
 
         </RelativeLayout>

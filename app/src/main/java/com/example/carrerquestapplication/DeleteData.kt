@@ -11,8 +11,8 @@ import com.google.firebase.database.FirebaseDatabase
 
 class DeleteData : AppCompatActivity() {
 
-    private lateinit var binding: ActivityDeleteDataBinding
-    private lateinit var database : DatabaseReference
+    lateinit var binding: ActivityDeleteDataBinding
+    lateinit var database : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +37,7 @@ class DeleteData : AppCompatActivity() {
         }
     }
 
-    private fun deleteData(userName: String) {
+    fun deleteData(userName: String) {
 
         database = FirebaseDatabase.getInstance().getReference("User")
         database.child(userName).removeValue().addOnSuccessListener {

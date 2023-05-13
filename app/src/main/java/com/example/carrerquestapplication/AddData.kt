@@ -13,9 +13,9 @@ import com.google.firebase.database.FirebaseDatabase
 
 class AddData : AppCompatActivity() {
 
-    private lateinit var auth : FirebaseAuth
-    private lateinit var binding : ActivityAdddataBinding
-    private lateinit var database : DatabaseReference
+    lateinit var auth : FirebaseAuth
+    lateinit var binding : ActivityAdddataBinding
+    lateinit var database : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -34,5 +34,12 @@ class Note : AppCompatActivity() {
             val intent = Intent(this,DeleteData::class.java)
             startActivity(intent)
         }
+
+        val CancelBtn : Button = findViewById(R.id.CancelBtn)
+
+        CancelBtn.setOnClickListener{
+            val intent = Intent(this,Profile::class.java)
+            startActivity(intent)
+        }
     }
 }
